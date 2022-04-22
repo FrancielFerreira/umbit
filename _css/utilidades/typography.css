@@ -9,6 +9,9 @@
 .texto {
   font: 400 1rem/1.5 "Open Sans", sans-serif;
 }
+.texto-b {
+  font: 600 1rem/1.5 "Open Sans", sans-serif;
+}
 .texto-2 {
   font: 500 2rem/1.35 "Open Sans", sans-serif;
 }

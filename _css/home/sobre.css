@@ -1,0 +1,40 @@
+.sobre-bg {
+  background: var(--cp1-b);
+}
+.sobre {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 116ch;
+}
+.sobre h1 {
+  margin-bottom: 40px;
+}
+.sobre p {
+  margin-bottom: 20px;
+}
+.sobre-numeros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.sobre-numeros li {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 988px) {
+  .sobre-numeros {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre-numeros {
+    gap: 20px;
+  }
+  .sobre-numeros li {
+    flex: 1 1 32%;
+  }
+}
