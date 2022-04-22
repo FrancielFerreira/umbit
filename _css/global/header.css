@@ -1,0 +1,106 @@
+.header-bg {
+  background: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+} 
+
+.header-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: .25rem;
+}
+
+.header-menu a {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 8px 8px 0;
+  position: relative;
+}
+
+.header-menu a:hover,
+.header-menu a.ativo {
+  color: var(--cp1);
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: var(--cp1);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover:after,
+.header-menu a.ativo::after {
+  width: calc(100% - 16px);
+}
+
+.search {
+  padding: 8px 12px 0;
+}
+
+
+.search:hover  #search-lupa {
+  fill: var(--cp1);
+}
+
+/* menu mobile */
+#btn-menu-mobile {
+  display: none;
+}
+
+
+@media (max-width: 992px) {
+  .header-menu {
+    display: none;
+  }
+  #btn-menu-mobile {
+    display: block;
+  }
+
+  #btn-menu-mobile {
+      display: flex;
+      padding: .5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: .5rem;
+  }
+  
+  #hamburger {
+    border-top: 2px solid var(--cp1);
+    width: 20px;
+  }
+  #hamburger::after, #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: var(--cp1);
+      margin-top: 5px;
+      transition: .4s;
+      position: relative;
+  }
+  #nav.active #hamburger {
+      border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+      transform: rotate(45deg);
+  }
+  #nav.active #hamburger::after {
+      transform: rotate(-45deg);
+      top: -7px;
+  }
+}
