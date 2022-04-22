@@ -7,12 +7,6 @@
   padding-bottom: 40px;
   max-width: 116ch;
 }
-.sobre h1 {
-  margin-bottom: 40px;
-}
-.sobre p {
-  margin-bottom: 20px;
-}
 .sobre-numeros {
   display: flex;
   flex-wrap: wrap;

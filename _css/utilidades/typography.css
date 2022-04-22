@@ -4,16 +4,26 @@
 
 .titulo {
   font: 500 4rem/1.15 "Monteserrat", sans-serif;
+  margin-bottom: 40px;
+}
+.subtitulo {
+  font: 500 1.5rem/1.15 "Monteserrat", sans-serif;
 }
 
 .texto {
   font: 400 1rem/1.5 "Open Sans", sans-serif;
+  margin-bottom: 16px;
 }
 .texto-b {
   font: 600 1rem/1.5 "Open Sans", sans-serif;
 }
 .texto-2 {
+  font: 500 1.5rem/1.35 "Open Sans", sans-serif;
+  margin-bottom: 16px;
+}
+.texto-3 {
   font: 500 2rem/1.35 "Open Sans", sans-serif;
+  margin-bottom: 16px;
 }
 
 

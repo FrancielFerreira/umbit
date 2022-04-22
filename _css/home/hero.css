@@ -3,17 +3,12 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 40px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.hero-conteudo h1 {
-  margin-bottom: 40px;
+  padding-top: 140px;
+  padding-bottom: 100px;
 }
 
 .hero-conteudo p {
-  margin-bottom: 16px;
-  max-width: 16ch;
+  max-width: 18ch;
 }
 
 @media (max-width: 998px) {
