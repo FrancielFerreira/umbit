@@ -3,9 +3,30 @@
 }
 
 .titulo {
-  font: 500 2rem/1.25 "Monteserrat", sans-serif;
+  font: 500 4rem/1.15 "Monteserrat", sans-serif;
 }
 
 .texto {
   font: 400 1rem/1.5 "Open Sans", sans-serif;
+}
+.texto-2 {
+  font: 500 2rem/1.35 "Open Sans", sans-serif;
+}
+
+
+@media (max-width: 998px) {
+  .titulo {
+    font-size: 3rem;
+  }
+  .texto-2 {
+    font-size: 1.5rem
+  }
+}
+@media (max-width: 700px) {
+  .titulo {
+    font-size: 2rem;
+  }
+  .texto-2 {
+    font-size: 1.25rem
+  }
 }

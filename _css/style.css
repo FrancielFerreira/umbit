@@ -8,3 +8,6 @@
 @import "./utilidades/components.css";
 @import "./utilidades/typography.css";
 
+/* home */
+@import "./home/hero.css";
+
