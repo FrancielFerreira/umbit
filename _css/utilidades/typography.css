@@ -1,18 +1,18 @@
 .link {
-  font: 500 1rem/1.25 "Monteserrat", sans-serif;
+  font: 500 1rem/1.25 "Montserrat", sans-serif;
 }
 
 .titulo {
-  font: 500 4rem/1.15 "Monteserrat", sans-serif;
+  font: 500 4rem/1.15 "Montserrat", sans-serif;
   margin-bottom: 40px;
 }
 .titulo-b {
-  font: 500 3rem/1.25 "Monteserrat", sans-serif;
+  font: 500 3rem/1.25 "Montserrat", sans-serif;
   margin-bottom: 32px;
 }
 
 .subtitulo {
-  font: 500 1.5rem/1.5 "Monteserrat", sans-serif;
+  font: 500 1.5rem/1.5 "Montserrat", sans-serif;
 }
 
 .texto {
@@ -28,35 +28,44 @@
   margin-bottom: 16px;
 }
 
+.texto-2b {
+  font: 500 1.25rem/1.35 "Open Sans", sans-serif;
+  margin-bottom: 16px;
+}
+
 .texto-3 {
   font: 500 2rem/1.35 "Open Sans", sans-serif;
   margin-bottom: 16px;
 }
 
-
 @media (max-width: 998px) {
   .titulo {
     font-size: 3rem;
-  }.titulo-b {
+  }
+  .titulo-b {
     font-size: 2rem;
   }
   .subtitulo {
-    font: 500 1.25rem/1.5 "Monteserrat", sans-serif;
+    font-size: 1.25rem;
   }
   .texto {
-    font: 400 .875rem/1.5 "Open Sans", sans-serif;
+    font-size: 0.875rem
   }
   .texto-2 {
-    font-size: 1.5rem
+    font-size: 1.25rem;
   }
 }
 @media (max-width: 700px) {
   .titulo {
     font-size: 2rem;
-  }.titulo-b {
+  }
+  .titulo-b {
     font-size: 1.5rem;
   }
   .texto-2 {
-    font-size: 1.25rem
+    font-size: 1.25rem;
+  }
+  .texto-2b {
+    font-size: 1rem;
   }
 }

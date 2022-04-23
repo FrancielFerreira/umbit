@@ -2,7 +2,7 @@
   background: none;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 9;
 }
 .header-bg.ativo {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
@@ -35,7 +35,7 @@
 
 .header-menu a:hover,
 .header-menu a.ativo {
-  color: var(--cp1);
+  color: var(--cp1-b);
 }
 
 .header-menu a::after {
@@ -43,7 +43,7 @@
   display: block;
   height: 2px;
   width: 0;
-  background: var(--cp1);
+  background: var(--cp1-b);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;

@@ -16,7 +16,7 @@
 
 .portfolio-item {
   position: relative;
-  /* min-width: 360px; */
+  min-width: 188px;
 }
 .portfolio-item a {
   position: absolute;

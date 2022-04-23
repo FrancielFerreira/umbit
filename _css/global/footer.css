@@ -1,0 +1,10 @@
+.footer-bg {
+  background: var(--n1);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
