@@ -1,5 +1,7 @@
 .footer-bg {
   background: var(--n1);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer {
