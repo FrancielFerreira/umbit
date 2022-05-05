@@ -17,6 +17,9 @@
   display: flex;
   flex-direction: column;
 }
+.js .sobre-numeros li span {
+  display: none;
+}
 
 @media (max-width: 988px) {
   .sobre-numeros {

@@ -14,4 +14,16 @@ function toggleMenu(event) {
 }
 
 btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu);
+// btnMobile.addEventListener('touchstart', toggleMenu);
+
+// const btnTeam = document.querySelectorAll('#equipe a');
+// console.log(btnTeam, 'teste');
+
+// btnTeam.forEach((item) => {
+//   function clickNoLink(event) {
+//       event.preventDefault();
+//       console.log('clicou');
+//   }
+//   item.addEventListener('click', clickNoLink);
+// })
+
