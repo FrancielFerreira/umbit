@@ -1,0 +1,7 @@
+#sobre main {
+  background: var(--cp2);
+}
+
+#sobre .hero-conteudo p {
+  max-width: initial;
+}

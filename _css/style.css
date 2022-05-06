@@ -17,3 +17,6 @@
 @import "./home/parceiros.css";
 @import "./home/contato.css";
 
+
+/* home */
+@import "./sobre/sobre.css";
