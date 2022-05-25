@@ -1,5 +1,5 @@
 // Debounce do Lodash
-const debounce = function(func, wait, immediate) {
+const debounceMenu = function(func, wait, immediate) {
   let timeout;
   return function(...args) {
     const context = this;
@@ -14,7 +14,7 @@ const debounce = function(func, wait, immediate) {
   };
 };
   
-window.addEventListener('scroll', debounce(function() {
+window.addEventListener('scroll', debounceMenu(function() {
   const menuBg = document.querySelector('.header-bg');
   menuBg.classList.toggle('ativo', window.scrollY > 0);
 }, 50));

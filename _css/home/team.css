@@ -29,6 +29,7 @@
   background: linear-gradient(transparent 40%, #001b52 90%);
   opacity: 0;
   transition: .4s;
+  cursor: default;
 }
 
 .team-txt {

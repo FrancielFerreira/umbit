@@ -6,7 +6,8 @@
 }
 .header-bg.ativo {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-  background:rgba(255, 255, 255, 0.95)
+  background:rgba(255, 255, 255, 0.95);
+  transition: .3s;
 }
 .header {
   display: flex;

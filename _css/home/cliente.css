@@ -1,10 +1,11 @@
-.parceiros-bg {
+.cliente-bg {
   background: var(--cp3);
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 40px;
+  text-align: center;
 }
 
-.parceiros-list {
+.cliente-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -12,7 +13,7 @@
   justify-content: space-between;
 }
 
-.parceiros-item {
+.cliente-item {
   flex: 0 1 14%;
   background: var(--n2);
   min-width: 100px;
@@ -22,13 +23,13 @@
 }
 
 @media (max-width: 988px) {
-  .parceiros-item {
+  .cliente-item {
     flex: 0 1 30%;
   }
 }
 
 @media (max-width: 600px) {
-  .parceiros-item {
+  .cliente-item {
     flex: 0 1 44%;
   }
 }

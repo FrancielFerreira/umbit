@@ -14,9 +14,11 @@
 @import "./home/servicos.css";
 @import "./home/portfolio.css";
 @import "./home/team.css";
-@import "./home/parceiros.css";
-@import "./home/contato.css";
+@import "./home/cliente.css";
 
 
 /* home */
 @import "./sobre/sobre.css";
+
+/* contato */
+@import "./contato/contato.css";

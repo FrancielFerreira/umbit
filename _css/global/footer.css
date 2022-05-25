@@ -1,12 +1,7 @@
 .footer-bg {
-  background: var(--n1);
+  background: var(--cp4);
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
+  min-height: 12vh;
+  text-align: center;
 }

@@ -1,7 +1,11 @@
-.contato-bg {
+#contato .contato-bg {
   background: var(--c1);
-  padding-top: 80px;
-  padding-bottom: 40px;
+  min-height: 88vh;
+  padding-top: 140px;
+}
+
+#contato .header-bg {
+  background: var(--n2);
 }
 
 .contato-bg h1 {
@@ -87,6 +91,12 @@
 }
 
 @media (max-width: 860px) {
+  #contato .contato-bg {
+    padding-top: 120px;
+  }
+  .contato-bg h1 {
+    margin-bottom: 0;
+  }
   .contato {
     grid-template-columns: 1fr;
   }
@@ -100,7 +110,16 @@
 }
 
 @media (max-width: 460px) {
+  #contato .container {
+    padding: 8px;
+  }
   .contato-dados {
     background-image: none;
+  }
+  .contato-dados, .contato-form {
+    padding: 32px 16px;
+  }
+  .contato-redes div {
+    gap: 16px;
   }
 }
