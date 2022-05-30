@@ -1,41 +1,31 @@
-// Debounce do Lodash
-const debounceNR = function(func, wait, immediate) {
-  let timeout;
-  return function(...args) {
-    const context = this;
-    const later = function () {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    const callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
+const numeros = document.querySelectorAll("[data-counter]");
+const secaoNumeros = document.querySelector(".sobre");
+const alturaMinima = window.innerHeight * 0.6;
+
+function animaNumeros() {
+  let interval = 1000;
+  numeros.forEach((numero) => {
+    let startValue = 0;
+    let endValue = +numero.getAttribute("data-counter");
+    let duration = Math.floor(interval / endValue);
+    let countUp = setInterval(function () {
+      startValue++;
+      numero.innerText = `+ ${startValue}`;
+    if(startValue == endValue) {
+        clearInterval(countUp);
+      };
+    }, duration);
+  });
+};
+
+function numRel() {
+  const sectionTop = secaoNumeros.getBoundingClientRect().top;
+  const ativarNumeros = (sectionTop - alturaMinima) > 0;
+  const ativarNumeros2 = (sectionTop - alturaMinima) < 16;
+  if (ativarNumeros && ativarNumeros2) {
+    console.log("ativar");
+    animaNumeros();
   };
 };
 
-let counters = document.querySelectorAll(".sobre-numeros li span");
-let interval = 1000;
-const animCounter = window.innerHeight * 0.9;
-
-function numRel() {
-  counters.forEach((counter) => {
-    let startValue = 0;
-    let endValue = parseInt(counter.getAttribute("data-counter"));
-    let duration = Math.floor(interval / endValue);
-    const counterTop = counter.getBoundingClientRect().top;
-    const showNumRel = (counterTop - animCounter) < 0
-    if (showNumRel) {
-      let countUp = setInterval(function () {
-        startValue += 1;
-        counter.textContent = `+ ${startValue}`;
-        if(startValue == endValue) {
-          clearInterval(countUp);
-        };
-      }, duration);
-    }
-  });
-}
-window.addEventListener('scroll', debounceNR(function() {
-  numRel();
-}, 200));
+window.addEventListener('scroll', numRel);
